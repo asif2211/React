@@ -35,7 +35,7 @@ class App extends Component {
     render() {
         return (
            <div className="App">
-                <h4>hello this is button to switch to the name <button onClick={this.switchToName}>swirtch on name</button></h4>
+                <h4>SWITCH TO NAME<button onClick={this.switchToName}>swirtch on name</button></h4>
                <p> hello this is dynamic state changeing <Person name={this.state.persons[0].name} age={this.state.persons[0].age} /></p>
                <p> <Person name={this.state.persons[1].name} age={this.state.persons[1].age} /></p>
            </div>
