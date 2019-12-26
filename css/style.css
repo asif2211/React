@@ -1,0 +1,10 @@
+.buttton {
+    width:100px;
+    padding:20px;
+    border: 1px solid #eee;
+    margin:5px auto ;
+    display: inline-block;
+    color:#000;
+    text-shadow: 0 2px 3px #ccc;
+
+}
