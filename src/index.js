@@ -1,48 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import SearchBar from './components/search_bar';
-import Statleselement from './components/componet_type';
-const API_KEY = 'AIzaSyDO1p9-UXQamSs5FyxEfg3Riwbhet8Yc5U';
-import Header from './components/header_comp';
-import Props from './components/header_comp';
-import Faculty from './components/Classes';
-import SpreadOpertator from './components/spread_rest_operators';
-import  './components/style.css';
-import Contacts from './components/contacts'
-import Person from './components/propsandstats'
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-import './components/App.css';
-import './components/App.css';
+ReactDOM.render(<App />, document.getElementById('root'));
 
-// src/App.js
-
-
-
-class App extends Component {
-
-    state = {
-        persons : [
-            {name :'asif', age :29},
-            {name :'assssif', age :49}
-
-        ]
-    };
-
-    switchToName = () => {
-        console.log('click on button');
-
-    }
-    render() {
-        return (
-           <div className="App">
-                <h4>SWITCH TO NAME<button onClick={this.switchToName}>swirtch on name</button></h4>
-               <p> hello this is dynamic state changeing <Person name={this.state.persons[0].name} age={this.state.persons[0].age} /></p>
-               <p> <Person name={this.state.persons[1].name} age={this.state.persons[1].age} /></p>
-           </div>
-        )
-      }
-  }
-
-
-
-ReactDOM.render(<App />, document.getElementById('like_button_container'))
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
